@@ -108,7 +108,7 @@ public final class ClassForNameSupport {
             }
         } else if (result == null) {
             if (throwMissingRegistrationErrors()) {
-                throw MissingReflectionRegistrationUtils.forClass(className);
+                MissingReflectionRegistrationUtils.forClass(className);
             }
 
             if (returnNullOnException) {
